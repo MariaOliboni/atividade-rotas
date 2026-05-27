@@ -1,0 +1,89 @@
+.contatosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 40px 24px 60px;
+    background: var(--fundo-principal);
+    box-shadow: 0 18px 40px rgba(255, 255, 255, 0.216);
+}
+
+.contatosTitulo {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--branco);
+    text-align: center;
+}
+
+.contatosDescricao {
+    max-width: 780px;
+    color: rgba(245, 245, 245, 0.92);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.formContatos {
+    width: min(100%, 540px);
+    display: grid;
+    gap: 1.25rem;
+    padding: 28px;
+    border-radius: 18px;
+    background-color: rgba(245, 245, 245, 0.06);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.25);
+}
+
+.labelField {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--branco);
+    font-weight: 600;
+}
+
+.inputField,
+.textareaField {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--branco);
+    font-size: 1rem;
+    outline: none;
+}
+
+.inputField::placeholder,
+.textareaField::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.textareaField {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.btnEnviar {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+    font-size: 1rem;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btnEnviar:hover {
+    background-color: #910000;
+}
+
+@media (max-width: 640px) {
+    .contatosContainer {
+        padding: 28px 16px 48px;
+    }
+
+    .formContatos {
+        padding: 22px;
+    }
+}

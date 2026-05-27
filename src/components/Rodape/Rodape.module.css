@@ -1,0 +1,22 @@
+.rodape{
+    background-color: var(--vermelho-escuro);
+    display: flex;
+    column-gap: 1.5rem;
+    font-size: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.rodape h3{
+    font-size: 1rem;
+}
+.rodape a{
+    color: var(--branco);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.rodape .rodape a:hover{
+    color: #cccccc;
+    text-decoration: none;
+}

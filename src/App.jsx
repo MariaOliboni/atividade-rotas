@@ -1,4 +1,5 @@
 import './App.css'
+import Rodape from './components/Rodape/Rodape';
 import Menu from './components/Menu/Menu';
 import Home from './paginas/Home/Home';
 import SalaDeRotacao from './paginas/SalaDeRotacao/SalaDeRotacao';
@@ -18,6 +19,7 @@ const App = () => {
 
         <Route path='*' element={<h1>404 - Página Não Encontrada</h1>} />
       </Routes>
+      <Rodape />
     </BrowserRouter>
   )
 }

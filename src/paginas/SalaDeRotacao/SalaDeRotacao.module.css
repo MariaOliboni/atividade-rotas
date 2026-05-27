@@ -1,0 +1,70 @@
+.salaDeRotacao {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 40px 32px 60px;
+    background-color: var(--fundo-principal);
+}
+
+.tituloSala {
+    font-size: 2.3rem;
+    color: var(--branco);
+    margin-bottom: 0.75rem;
+    text-align: center;
+    font-family: "Metal Mania", system-ui, sans-serif;;
+}
+
+.descricaoSala, .emBreveDescricao {
+     max-width: 900px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--branco);
+    font-size: 1.05rem;
+    line-height: 1.85;
+    text-align: center;
+}
+.emBreve, .produtos {
+    font-size: 1.5rem;
+    color: var(--branco);
+    background-color: var(--vermelho-escuro);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    width: fit-content;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.produtos{
+    width: 100%;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: start;
+    grid-auto-rows: auto;
+    padding-top: 10px;
+}
+
+@media (max-width: 980px) {
+    .cardsContainer {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .salaDeRotacao {
+        padding: 28px 18px 42px;
+    }
+
+    .cardsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .descricaoSala {
+        font-size: 1rem;
+    }
+}
