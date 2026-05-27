@@ -5,7 +5,7 @@
     border: 3px solid var(--vermelho-escuro);
     border-radius: 10px;   
     padding: 20px;
-    width: 300px;
+    width: 340px;
     height: 400px;
     background-color: var(--branco);
     box-shadow: 0 18px 40px rgba(255, 255, 255, 0.104);}
@@ -34,4 +34,15 @@
     font-size: 20px;
     color: var(--vermelho-escuro);
     margin: 10px 0 0;
+}
+
+.botaoComprar{
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
 }

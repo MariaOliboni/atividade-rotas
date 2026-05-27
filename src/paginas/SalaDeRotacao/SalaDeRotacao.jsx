@@ -10,8 +10,12 @@ import relogioBolso from '../../assets/relogioBolso.jpg';
 import mochilaSCIFI from '../../assets/mochilaSCIFI.jpg';
 
 import luminaria from '../../assets/luminaria.jpg';
-import jaqueta from '../../assets/jaqueta.jpg';
+import brocheClassico from '../../assets/brocheClassico.jpg';
 import caderno from '../../assets/caderno.jpg';
+
+import camisetaHorror from '../../assets/camisetaHorror.jpg';
+import jaqueta from '../../assets/jaqueta.jpg';
+import camisetaClassica from '../../assets/camisetaClassica.jpg';
 
 const SalaDeRotacao = () => {
   return (
@@ -39,6 +43,26 @@ const SalaDeRotacao = () => {
         />
       </div>
 
+        <h3 className={styles.produtos}>Renove o Guarda-Roupa!</h3>
+
+       <div className={styles.cardsContainer}>
+        <CartaoProduto
+          nome="Jaqueta de Couro Estilo Anos 80"
+          preco="229,90"
+          imagem={jaqueta}
+        />
+        <CartaoProduto
+          nome="Camiseta Clássica de Filme"
+          preco="115,90"
+          imagem={camisetaClassica}
+        />
+        <CartaoProduto
+          nome="Camiseta de Filme de Horror"
+          preco="115,90"
+          imagem={camisetaHorror}
+        />
+      </div>
+
       <h3 className={styles.produtos}>Outros Produtos!</h3>
       
       <div className={styles.cardsContainer}>
@@ -61,9 +85,9 @@ const SalaDeRotacao = () => {
 
        <div className={styles.cardsContainer}>
         <CartaoProduto
-          nome="Jaqueta de Couro Estilo Anos 80"
-          preco="229,90"
-          imagem={jaqueta}
+          nome="Broche de Filme Clássico"
+          preco="59,90"
+          imagem={brocheClassico}
         />
         <CartaoProduto
           nome="Luminaria de Mesa"
@@ -77,8 +101,13 @@ const SalaDeRotacao = () => {
         />
       </div>
 
+
+
+      <hr />
+
       <h3 className={styles.emBreve}>Em Breve mais produtos!</h3>
-      <p className={styles.emBreveDescricao}>Fique ligado, porque a cada semana trazemos uma nova temática para você explorar. Seja um clássico do cinema, um gênero específico ou uma homenagem a um diretor icônico, nossa sala de rotação é o lugar onde a magia do cinema ganha vida em forma de produtos exclusivos. Não perca a chance de descobrir novidades e se apaixonar por cada tema que preparamos com tanto carinho para você!</p>
+
+      <p className={styles.emBreveDescricao}>Fique ligado, porque a cada mês trazemos uma nova temática para você explorar. Seja um clássico do cinema, um gênero específico ou uma homenagem a um diretor icônico, nossa sala de rotação é o lugar onde a magia do cinema ganha vida em forma de produtos exclusivos. Não perca a chance de descobrir novidades e se apaixonar por cada tema que preparamos com tanto carinho para você!</p>
 
     </div>
   )

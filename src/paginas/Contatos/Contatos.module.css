@@ -77,7 +77,25 @@
 .btnEnviar:hover {
     background-color: #910000;
 }
-
+hr{
+    width: 100%;
+    height: 1px;
+    margin: 1.5rem 0;
+}
+.infoContato {
+   width: min(100%, 540px);
+    display: grid;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: rgba(245, 245, 245, 0.06);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    justify-items: stretch;
+}
+.infoDescricao{
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    }
 @media (max-width: 640px) {
     .contatosContainer {
         padding: 28px 16px 48px;

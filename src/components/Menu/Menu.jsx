@@ -11,6 +11,12 @@ const Menu = () => {
                 <MenuLink to = "/" >Home</MenuLink>
                 <MenuLink to = "/sala-de-rotacao" >Sala de Rotação</MenuLink>
                 <MenuLink to = "/contatos" >Contatos</MenuLink>
+                <span
+                class={styles.botaoCarrinho + " material-symbols-outlined "}
+                onClick={() => alert('Abrindo carrinho de Compras...')}
+                >
+                shopping_cart
+                </span>
             </nav>
         </header>
     )
